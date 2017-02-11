@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Atelier programmation MJC Herbasse</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        
+        <style>
+            table, th, td {
+	           border: 1px solid black;
+            }
+            .red {background-color: red;}
+            .blue {background-color: blue;}
+            .yellow {background-color: yellow;}
+            /*
+            .my_block {
+                width: 30%;
+                display: inline-block;
+            }
+            .container {
+                width: 100%;
+            }
+            body {
+                margin-left: 10%;
+            }
+            */
+            
+        </style>
+    </head>
+    <body>
+        <a href="../index.html">Tableau</a>&emsp;<a href="cour1.html">Cours 1</a>&emsp;<a href="cour2.html">Cours 2</a>&emsp;<a href="cour3.html">Cours 3</a><br>
+        <h1>Tableau dans HTML</h1>
+        <xmp>
+<table>
+    <thead>
+    <tr> 
+        <th>Titre 1</th> <th>Titre 2</th>
+    </tr>
+    </thead>
+    <tr> 
+        <td>Ligne 1 colonne 1</td><td>Ligne 1 colonne 2</td>
+    </tr>
+    <tr> 
+        <td>Ligne 2 colonne 1</td><td>Ligne 2 colonne 2</td>
+    </tr>
+</table>
+            </xmp>
+        Pour ajouter un border avec CSS
+<xmp>
+<style>
+    table, th, td {
+	   border: 1px solid black;
+    }
+</style>        
+</xmp>
+        
+<h2>Balise HTML DIV et SPAN</h2>
+
+ <br>
+&lt;div>&lt;/div>: Conteneur générique (pour appliqué CSS/JS plus tard)<br>
+&lt;span>&lt;/span>: Pareil mais sans le retour à la ligne à la fin
+        
+<h2>Plus de sélecteurs CSS</h2>
+Nous avons vu que nous pouvons utiliser les balises HTML comme sélecteur CSS, mais il y en a des autres.A chaque élément HTML nous pouvons ajouter un attribut "class", et/ou un attribut "id"
+<h3>Attribut class</h3>
+Permet de définir une classe pour l'élément. C'est nous qui donne le nom de la "class", et nous pouvons donner la même classe à plusieurs élément HTML different. En plus un élément HTML peut avoir plusieurs classes.<br>
+Example: &lt;div class="btn btn-success">&lt;/div><br>
+Pour utiliser la classe comme sélecteur CSS on mets un . avant le nom, dans notre example ça sera .btn et .btn-success
+<h3>Attribut ID</h3>
+Chaque element HTML peut avoir un et un seul ID, cet ID doit être unique dans la page.
+Example: &lt;div id="id_bouton_pour_exploser">&lt;/div>       
+<br>
+Pour utiliser le ID comme sélecteur CSS on mets un # avant le nom, dans notre exemple ça sera #id_bouton_pour_exploser
+<h2>DIV SPAN avec class</h2>
+    <xmp>
+    <div class="container">
+        <span class="my_block red">RED ZONE</span>
+        <span class="my_block blue">BLUE ZONE</span>
+        <span class="my_block yellow">YELLOW ZONE</span>
+    </div>
+        <style>
+            .red {background-color: red;}
+            .blue {background-color: blue;}
+            .yellow {background-color: yellow;}
+            .my_block {
+                width: 30%;
+                display: inline-block;
+            }
+            .container {
+                width: 100%;
+            }
+        </style>
+    </xmp>
+    <div class="container">
+        <span class="my_block red">RED ZONE</span>
+        <span class="my_block blue">BLUE ZONE</span>
+        <span class="my_block yellow">YELLOW ZONE</span>
+    </div>
+    Esayons autres choses pour le style de ces class 
+    <ul>
+        <li>Utilisation de pourcentage pour le "width"</li>
+        <li>SPAN avec "display:inline-block;"</li>
+        <li><a href="http://www.w3schools.com/css/css_padding.asp">padding</a>{padding: 20px;}</li>
+        <li><a href="http://www.w3schools.com/css/css_margin.asp">margin</a>{margin: 20px;}</li>
+        <li><a href="http://www.w3schools.com/css/css_border.asp">borders</a> {border: 5px solid red;border-radius: 16px;}</li>
+    </ul>
+    <h2> Autres CSS</h2>
+        <h3>fonts</h3>
+        <h3>Align</h3>
+        {text-align: center;}(center/right/left/justify)
+        <h3>Icons</h3>
+        <a href="http://www.w3schools.com/css/css_icons.asp">Comment ajouter des icones</a>
+        <xmp>
+        Ajouter dans le "head":
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        Et après dans votre code:
+        <i class="glyphicon glyphicon-cloud"></i>
+        <i class="glyphicon glyphicon-remove"></i>
+        <i class="glyphicon glyphicon-user"></i>
+        <i class="glyphicon glyphicon-envelope"></i>
+        <i class="glyphicon glyphicon-thumbs-up"></i>            
+            
+        </xmp>
+        <i class="glyphicon glyphicon-cloud"></i>
+        <i class="glyphicon glyphicon-remove"></i>
+        <i class="glyphicon glyphicon-user"></i>
+        <i class="glyphicon glyphicon-envelope"></i>
+        <i class="glyphicon glyphicon-thumbs-up"></i> <br>           
+        <a href="http://getbootstrap.com/components/">Voir tous les icones bootstrap</a>
+        <h3>Links stylés</h3>
+        Quatre "selectors" pour modifier le style de liens
+        <ul>
+<li>a:link - lien normal jamais visité</li>
+<li>a:visited - lien normal déjà visité</li>
+<li>a:hover - lien avec la souris</li>
+<li>a:active - lien pendnat le "click"</li>
+        </ul>
+        <a href="http://www.w3schools.com/css/css_link.asp">Plus d'info</a>
+        
+        <h2>Chercher plus sur Internet</h2>
+        <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3">https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3</a>
+</body>
+</html>

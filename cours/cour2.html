@@ -3,7 +3,74 @@
     <head>
         <meta charset="utf-8">
         <title>Atelier programmation MJC Herbasse</title>
+        <style>
+            h1 {
+                color:brown;
+                background-color: cornsilk;
+            }
+            h2 {
+                background-color: brown;
+                color:cornsilk;
+            }
+            body {
+                background-image: url('../images/backgrounds/Elegant_Background-5.jpg');
+                color: cornsilk;
+            }
+        </style>
     </head>
     <body>
+        <a href="../index.html">Tableau</a>&emsp;<a href="cour1.html">Cours 1</a>&emsp;<a href="cour2.html">Cours 2</a>&emsp;<a href="cour3.html">Cours 3</a><br>
+        <h1>HTML: Liens et images</h1>
+        
+        <h2>Lien vers un autre page dans notre site</h2>
+Quand nous avons plusieurs pages HTML dans notre site, on peux crée des liens entré eux en utilisant le sytax <strong>&lt;a href="cour1.html"&gt;ici&lt;/a&gt;</strong><br>
+        Et dans un vrai HTML <a href="cour1.html">ici</a><br>
+        Rapelle: Dans l'attribut href il faut avoir le chemin complet pour arriver au fichier depuis l'emplacement de notre html. Dans ce site cour1.html, et cour2.html sont dans le même répertoire.
+        
+        <h2>Images</h2>
+        Pour rajouter une image on utilise la balise img, par example:<br>
+        <strong>&lt;img src="../images/image1.jpg" title="Chouquette" alt="Moi et chouquette" width="200px;"&gt;</strong><br>
+        Comme pour le lien, l'attribut src indique le chemin complet vers le fichier d'image. La notation .. indique un répertoire en arriere.<br><br>
+        <img src="../images/image1.jpg" title="Chouquette" alt="Moi et chouquette" width="200px;">
+        
+        <h3>Comment trouver des images?</h3>
+        Soit chez vous, utilisez vos images. Soit sur Internet, mais en cherchant des images avec licences CC <strong>Creative Commons</strong>. Par example sur: <a href="https://www.flickr.com/creativecommons/">https://www.flickr.com/creativecommons/</a>
+        
+        <h1>CSS: pour des pages plus stylés!</h1>
+        Pour enrechir le style de notre page, on utilise la language CSS. Pour cela nous rajoutons un block style dans la partie head de notre page html<br>
+        &lt;style&gt;<br>
+        ..... ici on mets le code CSS<br>
+        &lt;/style&gt;<br>
+        Dans ce block on va inserer nos code CSS qui va avoir le form de:<br>
+        selector : {<br>
+        &emsp;    css property: value;<br>
+        &emsp;    css property: value;<br>
+        }<br>
+        Le "selector", nous permet de choisir un element dans notre page sur lequel on va appliquer notre style. Nous avons appris à utiliser les balises HTML comme selectors, par example h1, ou body, mais il y a aussi des autres selector. .<br>
+        Les css property c'est le propriété visuel que nous volons modifier, ça pourait être coleur, taille, coleur de fond, type de polices, et beaucoup des autres.<br>
+        Le "value" indique la valeur que nous volons appliquer. Le CSS properties et values, sont défini par W3C et font partie de la définition de CSS, nous ne povonus rien invinter!<br>
+        Dans ce deuxième cours, nous avons appris les properties:<br>
+        <ul>
+        <li><strong>color: </strong> Pour modifier la coleur de texte. Par example "color:red". Une liste de coleurs possible se trouve facilement sur Internet, par example sur <a href="http://www.w3schools.com/cssref/css_colors.asp">le site de w3schools</a> </li>
+        <li><strong>background-color: </strong> Pour changer le coleur de fond, même valeur possibles que pour color</li>
+        <li><strong>background-image: </strong> Pour mettre une image dans le fond. Dans ce cas le valeur est url('chemin_vers_fichier_image')</li>
+        </ul>
+        Nous avons donc pu ajouter à notre page, une partie style pour modifier les coleurs:<br>
+        &lt;style&gt;<br>
+            h1 {<br>
+                &emsp;color:brown;<br>
+                &emsp;background-color: cornsilk;<br>
+            }<br>
+            h2 {<br>
+                &emsp;background-color: brown;<br>
+                &emsp;color:cornsilk;<br>
+            }<br>
+            body {<br>
+                &emsp;background-image: url('../images/backgrounds/Elegant_Background-5.jpg');<br>
+                &emsp;color: cornsilk;<br>
+            }<br>
+        &lt;/style&gt;<br>
+
+        
     </body>
 </html>
